@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Linking Java Script -->
+    <script src="weatherScript.js"></script>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <h1>Weather  Report</h1>
+
+<!--Getting input from the user.-->
+        <div id="input_div" >
+            <h1>Please Enter the City name </h1>
+                <strong>City Name </strong>
+                <input type="text" id="inputTextBox" /><br>
+                <input type="submit" id="get_Current_Weather" value="Current Weather" onclick="getCurrentWeather()"/>
+                <input type="submit" id="get_Forecast" value="Weather Forecast for next 12 Hours" onclick="getForecast()"/><br>
+        </div>
+<!--current Weather display tags-->
+        <div id=CurrentResponse_Div>
+            <h2 id="weather_0" style="display: none" >Weather:</h2>
+                <p id="p_id"> </p>
+            <h2 id="max_Temp_0" style="display: none" >Maximum-Temperature:</h2>
+                <p id="p1_id"></p>
+            <h2 id="min_Temp_0" style="display: none" >Minimum-Temperature:</h2>
+                <p id="p2_id"></p>
+        </div>
+<!--Forecast Display Tags-->
+        <div id=ForecastResponse_Div>
+                <h2 id="date_0" style="display: none" >Date:</h2>
+                    <p id="p3_id"> </p>
+                <h2 id="max_Temp_1" style="display: none" >Maximum-Temperature:</h2>
+                    <p id="p4_id"></p>
+                <h2 id="min_Temp_1" style="display: none" >Minimum-Temperature:</h2>
+                    <p id="p5_id"></p>
+                <h2 id="date_1" style="display: none" >Date:</h2>
+                    <p id="p6_id"> </p>
+                <h2 id="max_Temp_2" style="display: none" >Maximum-Temperature:</h2>
+                    <p id="p7_id"></p>
+                <h2 id="min_Temp_2" style="display: none" >Minimum-Temperature:</h2>
+                    <p id="p8_id"></p>
+                <h2 id="date_2" style="display: none" >Date:</h2>
+                    <p id="p9_id"> </p>
+                <h2 id="max_Temp_3" style="display: none" >Maximum-Temperature:</h2>
+                    <p id="p10_id"></p>
+                <h2 id="min_Temp_3" style="display: none" >Minimum-Temperature:</h2>
+                    <p id="p11_id"></p>
+                <h2 id="date_3" style="display: none" >Date:</h2>
+                    <p id="p12_id"> </p>
+                <h2 id="max_Temp_4" style="display: none" >Maximum-Temperature:</h2>
+                    <p id="p13_id"></p>
+                <h2 id="min_Temp_4" style="display: none" >Minimum-Temperature:</h2>
+                    <p id="p14_id"></p>
+                <h2 id="date_4" style="display: none" >Date:</h2>
+                    <p id="p15_id"></p>
+                <h2 id="max_Temp_5" style="display: none" >Maximum-Temperature:</h2>
+                    <p id="p16_id"> </p>
+                <h2 id="min_Temp_5" style="display: none" >Minimum-Temperature:</h2>
+                    <p id="p17_id"></p>
+        </div>
+<!--Incase of exceptions-->
+        <p id="error_Id"></p>
+</body>
+</html>
